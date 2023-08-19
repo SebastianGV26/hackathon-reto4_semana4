@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+  
+}
+.menu-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.menu-nav ul{
+    width: 600px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-nav ul a{
+    text-decoration: none;
+    color: slategray;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.menu-nav .btn-contacto{
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid red;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: slategray;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.menu-nav .btn-contacto:hover{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    transition: .4s ease-out;
+}
+.imagen_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: linear-gradient(to top, rgba(83, 83, 83, 0.52), rgba(27, 27, 27, 0.73)),url('images/buffet-1.jpg');
+    background-size: 100%;
+    background-position: center;
+    
+}
+.imagen_index h2{
+    font-family: 'Raleway', sans-serif;
+    color: yellow;
+    width: 1000px;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+}
+
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quienessomos h2{
+    font-family: 'Relaway', sans-serif;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid red;
+    color: rgb(73, 73, 73);
+}
+.contenido_quienesSomos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+.contenido_quienesSomos .quienesSomosImage{
+    width: 500px;
+}
+.contenido_quienesSomos .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido_quienesSomos .texto_somos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 2rem;
+}
+.contenido_quienesSomos .texto_somos p{
+    padding-bottom: 0.5rem;
+    font-size: .9rem;
+}
+.proveemos{
+    background-image: linear-gradient(to top, rgba(15, 15, 15, 0.52), rgba(5, 5, 5, 0.73)),url('images/food-table.jpg');
+    background-size: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proveemos h2{
+    color: #ffffff;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+.servicios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicios h2{
+    font-family: 'Relaway', sans-serif;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid red;
+    color: rgb(73, 73, 73);
+}
+.contenido_servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.mostrar_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mostrar_servicios img{
+    width: 300px;
+}
+.mostrar_servicios .subtitulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    box-shadow: 1px 1px gray;
+}
+.mostrar_servicios .subtitulo h3{
+    font-size: 0.9rem;
+    color: rgb(66, 66, 66);
+}
+.paquetes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paquetes .titulo{
+    font-family: 'Relaway', sans-serif;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid red;
+    color: rgb(73, 73, 73);
+}
+.paquetes .subtitulo{
+    color: gray;
+    padding: 2rem;
+    font-size: 1rem;
+}
+.paquetes .info_paquetes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+.paquetes .info_paquetes div{
+    height: 550px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    border: 1px solid gray;
+}
+.paquetes .info_paquetes h2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paquetes .info_paquetes h3{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.paquetes .info_paquetes div ul{
+    list-style: none;
+    padding: 1rem;
+    line-height: 3rem;
+}
+.paquetes .info_paquetes div ul:nth-child(1){
+    width: 100%;
+    border-bottom: #161616;
+}
+.paquetes .info_paquetes div ul li i{
+    padding-right: 1rem;
+}
+
+
+.contacto .informacion{
+    color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+.contacto .informacion h2{
+    font-family: 'Relaway', sans-serif;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid red;
+}
+.contacto .informacion h4{
+    padding-top: 1rem;
+}
+.form-contacto{
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 20px;
+}
+.form-contacto .seccion_form label{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 700;
+}
+.form-contacto .seccion_form div{
+    padding-top: 0.5rem;
+}
+.form-contacto .seccion_form div input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid rgb(197, 197, 197);
+}
+.form-contacto .seccion_form div textarea{
+    width: 310%;
+    border: 1px solid rgb(197, 197, 197);
+}
+.btn{
+    padding-left: 2rem;
+}
+.btn .btn-enviar{
+    width: 100px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(2, 161, 2);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.btn .btn-enviar:hover{
+    transition: .4s ease-out;
+    background-color: rgb(2, 110, 2);
+}
+footer{
+    width: 100%;
+    background-color: #161616;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .redes{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+footer .redes a{
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+footer .derechos{
+    color: white;
+    width: 80%;
+    border-top: 1px solid rgb(53, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .derechos i{
+    margin-top: 1rem;
+}
